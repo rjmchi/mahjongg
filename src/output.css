@@ -178,12 +178,6 @@
   .my-4 {
     margin-block: calc(var(--spacing) * 4);
   }
-  .my-6 {
-    margin-block: calc(var(--spacing) * 6);
-  }
-  .mt-10 {
-    margin-top: calc(var(--spacing) * 10);
-  }
   .flex {
     display: flex;
   }
@@ -221,8 +215,11 @@
   .border-indigo-800 {
     border-color: var(--color-indigo-800);
   }
-  .bg-\[\/images\/mahjongg\.jpg\] {
-    background-color: /images/mahjongg.jpg;
+  .bg-\[\.\/images\/mahjongg\.jpg\] {
+    background-color: ./images/mahjongg.jpg;
+  }
+  .bg-\[images\/mahjongg\.jpg\] {
+    background-color: images/mahjongg.jpg;
   }
   .bg-indigo-50 {
     background-color: var(--color-indigo-50);
@@ -230,11 +227,14 @@
   .bg-indigo-500 {
     background-color: var(--color-indigo-500);
   }
-  .bg-\[url\(\/images\/mahjongg\.jpg\)\] {
-    background-image: url(/images/mahjongg.jpg);
+  .bg-\[url\(\.\.\/images\/mahjongg\.jpg\)\] {
+    background-image: url(../images/mahjongg.jpg);
   }
-  .bg-cover {
-    background-size: cover;
+  .bg-\[url\(\.\/images\/mahjongg\.jpg\)\] {
+    background-image: url(./images/mahjongg.jpg);
+  }
+  .bg-\[url\(images\/mahjongg\.jpg\)\] {
+    background-image: url(images/mahjongg.jpg);
   }
   .bg-center {
     background-position: center;
@@ -245,14 +245,8 @@
   .p-4 {
     padding: calc(var(--spacing) * 4);
   }
-  .p-5 {
-    padding: calc(var(--spacing) * 5);
-  }
   .p-10 {
     padding: calc(var(--spacing) * 10);
-  }
-  .px-5 {
-    padding-inline: calc(var(--spacing) * 5);
   }
   .text-4xl {
     font-size: var(--text-4xl);
@@ -268,9 +262,6 @@
   }
   .text-indigo-900 {
     color: var(--color-indigo-900);
-  }
-  .text-neutral-50 {
-    color: var(--color-neutral-50);
   }
   .underline {
     text-decoration-line: underline;
